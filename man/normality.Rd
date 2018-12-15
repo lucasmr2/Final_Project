@@ -56,13 +56,14 @@ Lucas Roberts
 %%##-- ==>  Define data, use random,
 %%##--	or do  help(data=index)  for the standard data sets.
 %## The function is currently defined as
-datamat <- matrix(1:16, nrow = 4, ncol = 4)
+data.frame <- system.file("extdata", "499data.csv", package = "Final_Project")
 
-normality(datamat)
-data_check(datamat)
-model_quality(datamat)
+normality(data.frame)
+data_check(data.frame)
+model_quality(data.frame)
 
+}
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
-\keyword{ ~kwd1 }% use one of  RShowDoc("KEYWORDS")
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
+%\keyword{ ~kwd1 }% use one of  RShowDoc("KEYWORDS")
+%\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

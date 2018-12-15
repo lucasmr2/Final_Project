@@ -1,0 +1,12 @@
+Package: Building.Simple.Models
+Version: 0.0
+Date: 2018-12-15
+Title: Data Analysis and Simple Model Building
+Authors@R: person("Lucas", "Roberts", role = c("aut", "cre"),
+                  email = "lucasmr2@illinois.edu")
+Author: Lucas Roberts [aut, cre]
+Maintainer: Lucas Roberts <lucasmr2@illinois.edu>
+Description: This package includes functions to check normality of data, calculate and report correlations,plot outliers, build a simple model and report quality statistics about the model.
+Imports:ggplot2, ggpubr
+Url: https://github.com/lucasmr2/Final_Project
+License: GPL-3

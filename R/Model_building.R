@@ -24,11 +24,11 @@ normality <- function(df){
             num <- message("Your data has ", num_exp_var, " explanitory varriables.")
             
             #plotting histograms with normal distribution overlay
-            library("ggplot2")
+            #require("ggplot2")
 
             for (i in 1:ncol(df)){
 
-                gg <- ggplot(mydata, aes(x = df[,i])) 
+                gg <- ggplot(df, aes(x = df[,i])) 
                 gg <- gg +  geom_histogram(binwidth = (max(df[,i])-min(df[,i]))/20,
                                                        colour="black",
                                                       aes(y=..density.., fill=..count..)) +
@@ -43,7 +43,7 @@ normality <- function(df){
          
             #plotting QQ plots
             #install.packages("ggpubr")
-            library(ggpubr)
+            #require(ggpubr)
 
             for (i in 1:ncol(df)){
   
@@ -94,7 +94,7 @@ data_check <- function(df){
 
     #remove duplicate correlations 
     cor.vect <- data.frame(arrayInd(1:prod(dim(no.Y.mat)), dim(no.Y.mat)), value=c(no.Y.mat))
-    cor.sort <- t(apply(dat, 1, sort))
+    cor.sort <- t(apply(cor.vect, 1, sort))
     uniq.corr<- cor.vect[!duplicated(cor.sort),]
 
     #I do not car about correlations of X's with itself
