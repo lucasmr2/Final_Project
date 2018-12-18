@@ -44,7 +44,7 @@ You would like to see roughly linear responses for each explanitory variable plo
 }
 \examples{
 datafm <- system.file("extdata", "499data.csv", package = "Final_Project")
-mydata <- read.csv(datafm, header = TRUE)
+mydata <- read.csv(datafm)
 
 normality(mydata)
 data_check(mydata)
