@@ -3,3 +3,4 @@ import("ggplot2", "ggpubr")
 importFrom("graphics", "boxplot", "plot")
 importFrom("stats", "AIC", "BIC", "cor", "dnorm", "lm",
              "scatter.smooth", "sd", "shapiro.test")
+importFrom("grDevices", "dev.off", "pdf")
