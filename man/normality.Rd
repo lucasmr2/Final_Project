@@ -43,7 +43,7 @@ High correlations are wanted amoung predictor and explanitory varriables.  This 
 You would like to see roughly linear responses for each explanitory variable plotted against the response variable.  The model will take into account all variabels together, but if obvious parametric responses are seen the user should consider looking at term interactions or higher order models which this package does not asses. The QQ plot should be very linear, if not then the model is not a good fit of the data and the user should look into interactions or higher order terms in their model. The adjusted R square falls within 0 to 1 and the closer to 1 the better.  This quality score tells the user how much variablility the model is explaining.  If it is lover than .5 the model is not a good fit of the data. The AIC and BIC are used to compare one model to another.  If the plots or R square tell you this model is not good and you fit an interaction or higher order model, the way to compare and decide which model is better is to compare their AIC and BIC scores.  Whichever model has the lowest score for either criterion is the better model that explains the data beter.  If the AIC and BIC do not agree on a model, use BIC which is a more stringent method.  
 }
 \examples{
-datafm <- system.file("extdata", "499data.csv", package = "Final_Project")
+datafm <- system.file("extdata", "499data.csv", package = "Building.Simple.Models")
 mydata <- read.csv(datafm)
 
 normality(mydata)
