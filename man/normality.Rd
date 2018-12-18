@@ -15,7 +15,7 @@ model_quality(df)
 }
 \arguments{
   \item{df}{
-This is the data fram that the model will be build off of.  See details for more stipulations. 
+This is the data fram that the model will be built off of.  See details for more stipulations. 
 }
 }
 \details{
@@ -36,7 +36,6 @@ Lucas Roberts
 If the number of explanitory varibles returned is not what you intendted, check the details section and reformat your data. The histogram of each variable should be apporximately normal and follow the green normality distribution.  If you see left or right skewed data or platykurtic data, consider transforming your data via centering or scaling. QQ plots should follow the 1/1 line closely.  If points deviate from the predicted line consider transforming your data. 
 
 \code{data_check}
-
 High correlations are wanted amoung predictor and explanitory varriables.  This means that the higher the correlations the better the model will be for predictive purposes. Unique correlations are only reported between explanitory variabels.  0.5 is the standard for considering a correlation modereate.  Values above 0.8 are considered highly correlated and should be considered for combining the two traits into one variable in a multivariate method. Outliers are not automatically an issue, remove with caution and only if their leverage score are grealty that of other points. 
 
 \code{model_quality}
